@@ -3,7 +3,7 @@ import Logo from '../utils/Images/Brand/Logo IYSF tulisan samping.png'
 
 const Navigation = () => {
   return (
-    <nav class="sticky-top" style={{ backgroundColor: '#87CEEB' }}>
+    <nav className="sticky-top shadow-sm" style={{ backgroundColor: '#87CEEB' }}>
       <div class="container">
         {/* <a class="navbar-brand" href="#/">
           <div class="d-flex align-items-center">
@@ -18,13 +18,13 @@ const Navigation = () => {
           </div>
 
           <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-secondary">SPEAKERS</a></li>
-            <li><a href="#" class="nav-link px-2">SCHEDULE</a></li>
-            <li><a href="#" class="nav-link px-2">PARTNERS</a></li>
+            <li><a href="#/" class="nav-link px-2 link-secondary">SPEAKERS</a></li>
+            <li><a href="#/" class="nav-link px-2">SCHEDULE</a></li>
+            <li><a href="#/" class="nav-link px-2">PARTNERS</a></li>
           </ul>
 
           <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-success me-2">APPLY NOW</button>
+            <a target='_blank' rel="noreferrer" href='https://www.eventbrite.com/e/indonesia-youth-sustainability-forum-2024-tickets-970233523587?aff=oddtdtcreator' type="button" class="btn btn-success me-2">APPLY NOW</a>
           </div>
         </header>
       </div>
@@ -32,4 +32,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation
+export default Navigation;

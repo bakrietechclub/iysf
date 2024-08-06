@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <nav class="navbar bg-body-tertiary">
       <div class="container">
-        <a class="navbar-brand" href="#/">
+        <a class="navbar-brand" target="_blank" href="https://bcf.or.id/" rel="noreferrer">
           <div class="d-flex align-items-center">
             <img src={Logo} alt="Logo" height={60} class="d-inline-block align-text-top" />
           </div>
@@ -15,4 +15,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation
+export default Navigation;

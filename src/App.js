@@ -10,10 +10,10 @@ import Footer from './Components/Footer';
 function App() {
   return (
     <>
-      <NavigationBCF />
-      <Navigation />
       <header>
+        <NavigationBCF />
       </header>
+      <Navigation />
       <main>
         <Routes>
           <Route path='/' element={<Landing />} />

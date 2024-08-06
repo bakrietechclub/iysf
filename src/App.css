@@ -11,6 +11,16 @@
   position: relative; 
 }
 
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.card-hover:hover {
+  background-color: #FFA500;
+}
+
 .montserrat-thin {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
