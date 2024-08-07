@@ -3,7 +3,7 @@ import React from 'react'
 const Section1 = () => {
   return (
     <section className='container py-5'>
-      <div className='row'>
+      <div className='row d-flex align-items-center'>
         <div className="col">
           <h1 className='poppins-bold' style={{ fontSize: '3.25rem' }}>
             Ready to shape a sustainable future? Join us at the <span style={{ backgroundColor: '#FFA500' }}>Indonesia Youth Sustainability Forum</span> and be a part of the change!

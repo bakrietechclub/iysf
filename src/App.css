@@ -11,6 +11,17 @@
   position: relative; 
 }
 
+#section-location {
+  background: url(../src/utils/Images/Auditorium/SanctuaryAuditorium.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  height: 80vh; /* 100% of viewport height */
+  margin: 0 auto; 
+  position: relative; 
+}
+
 .card-cover {
   background-repeat: no-repeat;
   background-position: center center;

@@ -6,6 +6,7 @@ import Landing from './Pages/Landing';
 import NavigationBCF from './Components/NavigationBCF';
 import Navigation from './Components/Navigation';
 import Footer from './Components/Footer';
+import Speakers from './Pages/Speakers';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Navigation />
       <main>
         <Routes>
-          <Route path='/' element={<Landing />} />
+          <Route index element={<Landing />} />
+          <Route path='speakers' element={<Speakers />} />
         </Routes>
       </main>
       <footer>

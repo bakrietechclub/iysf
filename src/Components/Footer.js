@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='container'>
+    <div className='container mt-5'>
       <div class="row">
         <div class="col-6 col-md-2 mb-3">
           <h5>Section</h5>
@@ -53,9 +53,9 @@ const Footer = () => {
       <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
         <p>© 2024 Bakrie Center Foundation, Inc. All rights reserved.</p>
         <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#/"><i class="bi bi-twitter-x"></i></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#/"><i class="bi bi-instagram"></i></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#/"><i class="bi bi-facebook"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://x.com/BakrieCenter"><i class="bi bi-twitter-x"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://www.instagram.com/bakriecenter/"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://facebook.com/bakriecenterfoundation"><i class="bi bi-facebook"></i></a></li>
         </ul>
       </div>
     </div>

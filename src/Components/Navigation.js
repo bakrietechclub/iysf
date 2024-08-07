@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../utils/Images/Brand/Logo IYSF tulisan samping.png'
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
@@ -18,9 +19,10 @@ const Navigation = () => {
           </div>
 
           <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#/" class="nav-link px-2 link-secondary">SPEAKERS</a></li>
-            <li><a href="#/" class="nav-link px-2">SCHEDULE</a></li>
-            <li><a href="#/" class="nav-link px-2">PARTNERS</a></li>
+            {/* link-secondary */}
+            <li><Link to="speakers" class="nav-link px-2"><strong>SPEAKERS</strong></Link></li>
+            <li><a href="#/" class="nav-link px-2"><strong>SCHEDULE</strong></a></li>
+            <li><a href="#/" class="nav-link px-2"><strong>PARTNERS</strong></a></li>
           </ul>
 
           <div class="col-md-3 text-end">
