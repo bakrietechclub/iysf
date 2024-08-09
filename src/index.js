@@ -9,6 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'bootstrap-icons/font/bootstrap-icons.min.css';
+import './main.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,64 +1,70 @@
-import React from 'react'
+import React from 'react';
+import LogoBCF from '../utils/Images/Brand/Logo BCF_11.png';
+import LogoTVOne from '../utils/Images/Medpart/TVone.png';
+import LogoISF from '../utils/Images/Menkomarves/ISF.png';
+import LogoMenkomarvest from '../utils/Images/Menkomarves/Menkomarvest.png';
+import Wave from '../utils/Images/Brand/wave.svg';
 
 const Footer = () => {
+  const style = {
+    fontSize: '1.5rem',
+  };
+
   return (
-    <div className='container mt-5'>
-      <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-5 offset-md-1 mb-3">
-          <form>
-            <h5>Subscribe to our newsletter</h5>
-            <p>Monthly digest of what's new and exciting from us.</p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
-              <button class="btn btn-primary" type="button">Subscribe</button>
+    <>
+      <img src={Wave} alt='Wave' />
+      <div style={{ backgroundColor: '#87CEEB' }}>
+        <div className='container'>
+          <div class="row pt-3">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Organized by</h5>
+              <img src={LogoBCF} height={100} alt='Bakrie Center Foundation' />
             </div>
-          </form>
+
+            <div class="col-6 col-md-4 mb-3">
+              <h5>Supported by</h5>
+              <ul className='d-flex list-unstyled mt-auto'>
+                <li className='me-3'>
+                  <img src={LogoMenkomarvest} height={100} alt='Bakrie Center Foundation' />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <img src={LogoISF} height={100} alt='Bakrie Center Foundation' />
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Media Partner</h5>
+              <img src={LogoTVOne} height={100} alt='TV One' />
+            </div>
+
+            <div class="col-md-3 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center py-4">
+            <p>© 2024 Bakrie Center Foundation, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li style={style} class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://www.instagram.com/bakriecenter"><i class="bi bi-instagram"></i></a></li>
+              <li style={style} class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://www.tiktok.com/@bakriecenter"><i class="bi bi-tiktok"></i></a></li>
+              <li style={style} class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://www.youtube.com/@bakriecenter"><i class="bi bi-youtube"></i></a></li>
+              <li style={style} class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://www.linkedin.com/company/bakrie-center-foundation"><i class="bi bi-linkedin"></i></a></li>
+              <li style={style} class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://x.com/BakrieCenter"><i class="bi bi-twitter-x"></i></a></li>
+              <li style={style} class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://facebook.com/bakriecenterfoundation"><i class="bi bi-facebook"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
-        <p>© 2024 Bakrie Center Foundation, Inc. All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://x.com/BakrieCenter"><i class="bi bi-twitter-x"></i></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://www.instagram.com/bakriecenter/"><i class="bi bi-instagram"></i></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" target='_blank' rel="noreferrer" href="https://facebook.com/bakriecenterfoundation"><i class="bi bi-facebook"></i></a></li>
-        </ul>
-      </div>
-    </div>
+    </>
   )
 }
 

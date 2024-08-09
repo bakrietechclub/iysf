@@ -8,7 +8,7 @@ const Section1 = () => {
           <h1 className='poppins-bold' style={{ fontSize: '3.25rem' }}>
             Ready to shape a sustainable future? Join us at the <span style={{ backgroundColor: '#FFA500' }}>Indonesia Youth Sustainability Forum</span> and be a part of the change!
           </h1>
-          <a target='_blank' rel="noreferrer" href='https://www.eventbrite.com/e/indonesia-youth-sustainability-forum-2024-tickets-970233523587?aff=oddtdtcreator' className='btn btn-primary'>APPLY NOW</a>
+          <a target='_blank' rel="noreferrer" href='https://www.eventbrite.com/e/indonesia-youth-sustainability-forum-2024-tickets-970233523587?aff=oddtdtcreator' className='btn btn-primary'>REGISTER NOW</a>
         </div>
         <div className="col">
           <p>

@@ -24,6 +24,31 @@ const frequentlyAQ = [
     asked: 'What is the Tri Hita Karana philosophy and how is it related to IYSF?',
     question: 'Tri Hita Karana is an Indonesian philosophy that emphasizes harmony between humans, nature, and the Creator. IYSF adopts this philosophy as a foundation for achieving sustainability and supporting sustainable development goals in Indonesia.',
   },
+  {
+    id: 6,
+    asked: 'Are participants required to attend the entire event?',
+    question: 'Participants are not required to attend the event until the end, but we highly recommend staying until the end to gain valuable experiences throughout the event!',
+  },
+  {
+    id: 7,
+    asked: 'What experiences will participants gain from the IYSF?',
+    question: 'Participants will gain many memorable experiences from this event. They will acquire a wealth of knowledge about sustainability from experts in their respective fields. Additionally, participants will have the opportunity to network with many other young people from across Indonesia—an experience that cant be found in other events!',
+  },
+  {
+    id: 8,
+    asked: 'Will there be on-site registration for participants during the event?',
+    question: 'All participants to the event must be pre-registered online on the Eventbrite website',
+  },
+  {
+    id: 9,
+    asked: 'Is IYSF 2024 free?',
+    question: 'IYSF registration is free and valid for all categories of local and international participants, government delegates, and media, with limited seats.',
+  },
+  {
+    id: 10,
+    asked: 'Is there any contact center for registration?',
+    question: 'Please visit this link to contact us … You can also reach us by email at … or WhatsApp at …',
+  },
 ];
 
 export default frequentlyAQ;

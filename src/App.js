@@ -7,6 +7,7 @@ import NavigationBCF from './Components/NavigationBCF';
 import Navigation from './Components/Navigation';
 import Footer from './Components/Footer';
 import Speakers from './Pages/Speakers';
+import Partners from './Pages/Partners';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route index element={<Landing />} />
           <Route path='speakers' element={<Speakers />} />
+          <Route path='partners' element={<Partners />} />
         </Routes>
       </main>
       <footer>
