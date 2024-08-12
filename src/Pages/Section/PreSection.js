@@ -1,11 +1,20 @@
 import React from 'react'
 import TeaserVideo from '../../utils/Videos/Teasier.webm'
+import Banner from '../../utils/Images/Banner/Banner.png'
 
 const Introduction = () => {
   return (
-    <section id='section1' className='py-5 d-flex align-items-center'>
-      <div className="container">
-        <h1 className='text-center poppins-bold rounded-2 text-white' style={{ backgroundColor: '#FFA500' }}>Indonesia Youth Sustainability Forum</h1>
+    <section id='' className=''>
+      {/* <img src={Banner} class="img-fluid" alt="..." /> */}
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src={Banner} class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+      <div className="">
+        {/* <h1 className='text-center poppins-bold rounded-2 text-white' style={{ backgroundColor: '#FFA500' }}>Indonesia Youth Sustainability Forum</h1> */}
         {/* <div className="d-flex justify-content-end">
           <div className='row'>
             <div className="col-6">

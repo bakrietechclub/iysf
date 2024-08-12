@@ -9,6 +9,10 @@ const Speakers = () => {
     setDetail([key1, key2]);
   }
 
+  const onHandlerUsername = (str) => {
+    return str.split('/')[3]
+  }
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -45,6 +49,9 @@ const Speakers = () => {
           <img className='img-fluid' src={ourSpeakers[detail[0]].speakers[detail[1]].image} alt={ourSpeakers[detail[0]].speakers[detail[1]].name} />
           <div style={{ padding: '1rem' }}>
             <h4>{ourSpeakers[detail[0]].speakers[detail[1]].name}</h4>
+            <a className='text-muted' href={ourSpeakers[detail[0]].speakers[detail[1]].socmed.instagram} target='_blank' rel="noreferrer">
+              <p><i class="bi bi-instagram"></i> {onHandlerUsername(ourSpeakers[detail[0]].speakers[detail[1]].socmed.instagram)}</p>
+            </a>
             <p>{ourSpeakers[detail[0]].speakers[detail[1]].description}</p>
           </div>
         </div>

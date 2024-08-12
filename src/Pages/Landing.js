@@ -11,7 +11,7 @@ import Section7 from './Section/Section7';
 import Section8 from './Section/Section8';
 import SectionLocation from './Section/SectionLocation';
 
-const Landing = () => {
+const Landing = ({ db }) => {
   return (
     <>
       <PreSection />

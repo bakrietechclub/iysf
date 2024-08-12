@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LogoBCF from '../utils/Images/Brand/Logo BCF_11.png';
 import LogoTVOne from '../utils/Images/Medpart/TVone.png';
 import LogoISF from '../utils/Images/Menkomarves/ISF.png';
 import LogoMenkomarvest from '../utils/Images/Menkomarves/Menkomarvest.png';
 import Wave from '../utils/Images/Brand/wave.svg';
+import { addDoc, collection } from 'firebase/firestore';
 
-const Footer = () => {
+const Footer = ({ db }) => {
+  const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
+
   const style = {
     fontSize: '1.5rem',
   };
+
+  const onHandleSaveSubscription = async () => {
+    setLoading(true);
+    const docRef = await addDoc(collection(db, "users"), {
+      email
+    });
+    setLoading(false);
+    setEmail('');
+    console.log("Document written with ID: ", docRef.id);
+  }
 
   return (
     <>
@@ -16,12 +30,12 @@ const Footer = () => {
       <div style={{ backgroundColor: '#87CEEB' }}>
         <div className='container'>
           <div class="row pt-3">
-            <div class="col-6 col-md-2 mb-3">
+            <div class="col-12 col-md-2 mb-3">
               <h5>Organized by</h5>
               <img src={LogoBCF} height={100} alt='Bakrie Center Foundation' />
             </div>
 
-            <div class="col-6 col-md-4 mb-3">
+            <div class="col-12 col-md-4 mb-3">
               <h5>Supported by</h5>
               <ul className='d-flex list-unstyled mt-auto'>
                 <li className='me-3'>
@@ -33,7 +47,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div class="col-6 col-md-2 mb-3">
+            <div class="col-12 col-md-2 mb-3">
               <h5>Media Partner</h5>
               <img src={LogoTVOne} height={100} alt='TV One' />
             </div>
@@ -42,10 +56,17 @@ const Footer = () => {
               <form>
                 <h5>Subscribe to our newsletter</h5>
                 <p>Monthly digest of what's new and exciting from us.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <div class="d-flex flex-column flex-md-row w-100 gap-2">
                   <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address" />
-                  <button class="btn btn-primary" type="button">Subscribe</button>
+                  <input onChange={(e) => setEmail(e.target.value)} value={email} id="newsletter1" type="text" class="form-control" placeholder="Email address" />
+                  <button disabled={loading} onClick={() => onHandleSaveSubscription()} class="btn btn-primary" type="button">
+                    {loading ?
+                      <>
+                        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                        <span role="status">Loading...</span>
+                      </>
+                      : 'Subscribe'}
+                  </button>
                 </div>
               </form>
             </div>

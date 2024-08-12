@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
-    <nav className="sticky-top shadow-sm" style={{ backgroundColor: 'white' }}>
+    <nav className="sticky-md-top shadow-sm" style={{ backgroundColor: 'white' }}>
       <div class="container">
         {/* <a class="navbar-brand" href="#/">
           <div class="d-flex align-items-center">

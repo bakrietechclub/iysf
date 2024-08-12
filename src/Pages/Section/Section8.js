@@ -10,9 +10,9 @@ const Section8 = () => {
     <section className='container'>
       <h2 className='text-center'><strong>Sponsorship</strong></h2>
       <div className="row text-center">
-        <div className="col-12">
+        {/* <div className="col-12">
           <img height={100} src={LogoBNI} alt='Logo BNI' />
-        </div>
+        </div> */}
         <div className="col-12">
           <img height={100} src={LogoVKTR} alt='Logo VKTR' />
         </div>

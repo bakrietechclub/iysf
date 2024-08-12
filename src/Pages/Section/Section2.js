@@ -8,7 +8,7 @@ const Section2 = () => {
   return (
     <section className='mt-5 container'>
       <div className="row">
-        <div className="col-6">
+        <div className="col-12 col-md-6">
           {/* <img className='img-fluid' src={keyTopics[imageId].image} alt="" /> */}
           <div style={{ backgroundImage: `url('${keyTopics[topicsId].image}')` }} className="card-cover h-100 overflow-hidden text-bg-dark rounded-5 shadow-lg">
             <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -34,7 +34,7 @@ const Section2 = () => {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-12 col-md-6">
           {keyTopics.map((value, key) => (
             <div className='card-hover' style={{ cursor: 'default' }} onMouseEnter={() => setTopicsId(key)} key={key}>
               <div className='p-3'>

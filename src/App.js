@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
 // Pages
 import Landing from './Pages/Landing';
 // Components
@@ -9,7 +10,15 @@ import Footer from './Components/Footer';
 import Speakers from './Pages/Speakers';
 import Partners from './Pages/Partners';
 
+import { db, analytics } from './utils/firebase-config';
+import { logEvent } from 'firebase/analytics';
+
 function App() {
+
+  useEffect(() => {
+    logEvent(analytics, 'notification_received');
+  }, []);
+
   return (
     <>
       <header>
@@ -24,7 +33,7 @@ function App() {
         </Routes>
       </main>
       <footer>
-        <Footer />
+        <Footer db={db} />
       </footer>
     </>
   );

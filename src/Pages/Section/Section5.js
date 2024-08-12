@@ -12,7 +12,7 @@ const Section5 = () => {
 
         <div className='row'>
           {ourSpeakers[0].speakers.map((value, key) => (
-            <div key={key} className='col-12 col-md-6 col-lg-4 mb-3'>
+            <div key={key} className='col-12 col-md-6 col-lg-3 mb-3'>
               <div className="h-100 shadow-sm">
                 <img style={{ objectPosition: 'top' }} height={350} className='card-img object-fit-cover' src={value.image} alt={value.name} />
                 <div className="mx-3 card-body">
@@ -26,7 +26,7 @@ const Section5 = () => {
         </div>
 
         <div className='text-center pt-4'>
-          <Link className='btn btn-primary' to='speakers'>SEE MORE</Link>
+          <Link className='btn btn-success' to='speakers'>SEE MORE</Link>
         </div>
       </div>
     </section>
